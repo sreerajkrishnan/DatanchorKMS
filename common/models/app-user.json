@@ -1,0 +1,27 @@
+{
+  "name": "AppUser",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "accessLogs": {
+      "type": "hasMany",
+      "model": "AccessLogs",
+      "foreignKey": "userId"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW",
+      "property": "__get__accessLogs"
+    }
+  ],
+  "methods": {}
+}

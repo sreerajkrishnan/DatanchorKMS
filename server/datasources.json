@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongo": {
+    "host": "ds231961.mlab.com",
+    "port": 31961,
+    "url": "mongodb://account-admin-1954:0SWYnogftxWEn2l8Q@ds231961.mlab.com:31961/datanchor",
+    "database": "datanchor",
+    "password": "0SWYnogftxWEn2l8Q",
+    "name": "mongo",
+    "user": "account-admin-1954",
+    "connector": "mongodb"
+  }
+}
